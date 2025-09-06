@@ -1,0 +1,7 @@
+{
+  "name": "ShopSense Workspace",
+  "description": "An AI-powered creative studio for product visualization. Upload a scene and a product, then use natural language to place, edit, and style your composition. Features iterative editing, look presets, and undo/redo for a seamless workflow.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>ShopSense Workspace</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIHJ4PSI2MCIgZmlsbD0iIzBhMTkyZiIvPjxwYXRoIGQ9Ik0xMjggNzAgTDE0MyAxMTMgTDE4NiAxMjggTDE0MyAxNDMgTDEyOCAxODYgTDExMyAxNDMgTDcwIDEyOCBMMTEzIDExMyBaIiBmaWxsPSIjMzhlMDdiIi8+PHBhdGggZD0iTTEyOCAxMDAgTDEzNSAxMjEgTDE1NiAxMjggTDEzNSAxMzUgTDEyOCAxNTYgTDEyMSAxMzUgTDEwMCAxMjggTDEyMSAxMjEgWiIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Spline+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;700;900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --primary-color: #38e07b;
+        --dark-charcoal-gray: #1a1a1a;
+        --deep-blue: #0a192f;
+        --light-gray: #f3f4f6;
+        --border-color: #2d3748;
+        --safe-area-inset-top: env(safe-area-inset-top, 0px);
+        --safe-area-inset-right: env(safe-area-inset-right, 0px);
+        --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+        --safe-area-inset-left: env(safe-area-inset-left, 0px);
+      }
+      body {
+        font-family: 'Spline Sans', 'Noto Sans', sans-serif;
+        background-color: var(--deep-blue);
+        color: var(--light-gray);
+        overflow: hidden; /* Prevent body scroll */
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+      .btn-primary {
+        @apply bg-[var(--primary-color)] text-[var(--deep-blue)] font-bold py-2 px-4 rounded-full hover:bg-opacity-90 transition-colors disabled:bg-opacity-50 disabled:cursor-not-allowed;
+      }
+      .btn-secondary {
+        @apply bg-gray-700 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-600 transition-colors disabled:bg-gray-800 disabled:text-gray-500 disabled:cursor-not-allowed;
+      }
+      .panel {
+          @apply bg-[var(--dark-charcoal-gray)] rounded-2xl;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-900 text-gray-100 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
